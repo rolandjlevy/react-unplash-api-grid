@@ -17,9 +17,10 @@ const App = () => {
   const url = `${baseUrl}?count=${numberOfPhotos}&client_id=${clientID}`;
 
   const handleChange = (e) => {
-    console.log('handleChange');
     setInputValue(e.target.value);
   }
+
+  const sum = (a, b) => a + b;
 
   const handleSubmit = () => {
     e.preventDefault();
